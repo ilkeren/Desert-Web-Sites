@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("images/sa.jpg");
+    background-size: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+a:hover{
+    color: orange;
+}
+header{
+    position: relative;
+    padding: 0px 20px;
+    animation-name: animatyon;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animatyon {
+    from {top: -200px;}
+    to {top: 10px;}
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 40px;
+    font-family: "Agbalumo",sans-serif;
+}
+.navbar .bölme{
+    display: flex;
+    gap: 70px;
+}
+i{
+    font-size: 25px;
+    color: white;
+    margin: 25px;
+}
+.navbar .başla{
+    background-color: black;
+    padding: 10px;
+    border: 2px orange solid;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+.resimler .develer{
+    width: 600px;
+    border: 5px white solid;
+    border-radius: 80px;
+    left: 1100px;
+    top: 230px;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255); 
+    position: relative;
+    animation-name: animasyon;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes animasyon {
+    from {left: 1300px;}
+    to {left: 1000px;}
+}
+
+
+.bilgilendirme{
+    
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 370px;
+    left: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 4px orange solid;
+    
+}
+.sosyal{
+    margin: 0 auto;
+    width: 50%;
+    padding: 80px 0;
+}
+.home-ic{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: -15px;
+    margin-left: 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 10px;
+}
+.about-li:hover .home-ic{
+    display: block;
+    
+}
